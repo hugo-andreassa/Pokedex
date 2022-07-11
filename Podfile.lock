@@ -1,0 +1,20 @@
+PODS:
+  - ObjectMapper (4.2.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - ObjectMapper
+  - SVProgressHUD (= 2.2.5)
+
+SPEC REPOS:
+  trunk:
+    - ObjectMapper
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 40aca8cac483dfedb9f0f80bc24a7f7c27731733
+
+COCOAPODS: 1.11.2
