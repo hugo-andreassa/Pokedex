@@ -60,7 +60,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let item = self.pokemonList[indexPath.row]
         
         cell.lblName.text = item.name?.capitalizingFirstLetter() ?? ""
-        cell.setupImage(detailURL: item.url ?? "", service: service)
+        cell.setupDetails(detailURL: item.url ?? "", service: service)
         
         return cell
     }

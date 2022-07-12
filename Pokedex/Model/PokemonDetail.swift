@@ -10,11 +10,13 @@ import ObjectMapper
 
 struct PokemonDetail: Mappable {
     var sprite: Sprite?
+    var types: [Types]?
     
     init?(map: Map) {}
     
     mutating func mapping(map: Map) {
         sprite <- map["sprites"]
+        types <- map["types"]
     }
 }
 
@@ -25,5 +27,15 @@ struct Sprite: Mappable {
 
     mutating func mapping(map: Map) {
         frontSpritUrl <- map["front_default"]
+    }
+}
+
+struct Types: Mappable {
+    var nameType: String?
+    
+    init?(map: Map) {}
+
+    mutating func mapping(map: Map) {
+        nameType <- map["type.name"]
     }
 }

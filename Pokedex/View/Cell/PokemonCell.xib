@@ -29,14 +29,23 @@
                                 <constraint firstAttribute="height" constant="96" id="xsf-UZ-pFm"/>
                             </constraints>
                         </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9t1-gq-big">
+                            <rect key="frame" x="20" y="85" width="222" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstItem="9t1-gq-big" firstAttribute="leading" secondItem="R4T-a1-jbu" secondAttribute="leading" constant="20" symbolic="YES" id="8cY-Vv-98M"/>
                         <constraint firstAttribute="trailing" secondItem="Wcn-ID-5vh" secondAttribute="trailing" constant="20" id="8xq-im-vw8"/>
                         <constraint firstItem="zuG-ma-Qul" firstAttribute="centerY" secondItem="R4T-a1-jbu" secondAttribute="centerY" id="Az0-g8-ItX"/>
                         <constraint firstItem="Wcn-ID-5vh" firstAttribute="top" secondItem="R4T-a1-jbu" secondAttribute="top" constant="10" id="Rs4-LE-hQg"/>
                         <constraint firstAttribute="bottom" secondItem="Wcn-ID-5vh" secondAttribute="bottom" constant="10" id="SUa-b0-nug"/>
+                        <constraint firstItem="9t1-gq-big" firstAttribute="top" secondItem="zuG-ma-Qul" secondAttribute="bottom" constant="15" id="gu8-5r-sf2"/>
                         <constraint firstItem="Wcn-ID-5vh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zuG-ma-Qul" secondAttribute="trailing" constant="20" id="uXl-Sc-zCn"/>
+                        <constraint firstItem="Wcn-ID-5vh" firstAttribute="leading" secondItem="9t1-gq-big" secondAttribute="trailing" constant="20" id="y4N-BI-74K"/>
                         <constraint firstItem="zuG-ma-Qul" firstAttribute="leading" secondItem="R4T-a1-jbu" secondAttribute="leading" constant="20" id="yJf-VT-Q6g"/>
                     </constraints>
                 </view>
@@ -52,6 +61,7 @@
             <connections>
                 <outlet property="imgSprit" destination="Wcn-ID-5vh" id="3Zx-eT-h0z"/>
                 <outlet property="lblName" destination="zuG-ma-Qul" id="LI4-DA-vtW"/>
+                <outlet property="lblTypes" destination="9t1-gq-big" id="O7A-km-9ol"/>
                 <outlet property="viewBackground" destination="R4T-a1-jbu" id="aLm-G5-UJt"/>
             </connections>
             <point key="canvasLocation" x="134.78260869565219" y="358.25892857142856"/>
